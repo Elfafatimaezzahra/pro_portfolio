@@ -14,14 +14,14 @@
 <body>
     <section id="home">
         <header>
-            <a href="#" class="logo">Portfo<span>lio</span></a>
+            <a href="#" class="logo"><span>E</span>lfa<span>F</span>ati</a>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li> 
-                <div class="cv"><a href="#cv" class="cv-btn">Download cv</a></div>
+                <div class="cv"><a href="nv cv.pdf" class="cv-btn">Download cv</a></div>
                 <!-- <div>
                     <input type="checkbox" class="checkbox" id="checkbox">
                   <label for="checkbox" class="label">
@@ -33,11 +33,16 @@
               </ul>
         </header>
         <div class="home_content">
+            <div class="reseau_soc">
+                <a href="#"><img src="images/facebook.png" alt=""></a><br>
+                <a href="#"><img src="images/whatsapp.png" alt=""></a><br>
+                <a href="#"><img src="images/github.png" alt=""></a>
+            </div>
             <div class="paragraph">
               <div class="text1">Hello my name is</div>
               <div class="text2">Fatima-ezzahra El Fahimi</div>
               <div class="text3">And I'm a <span>JavaScript Developer</span></div>
-              <a href="#about">About Me</a>
+              <a href="#about" class="btn_aboutme">About Me</a>
             </div>
             <div class="imag"><img src="images/mypic.png" alt=""></div>
         </div>
@@ -58,7 +63,7 @@
                  consequatur dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi molestias
                  excepturi suscipit libero perspiciatis nemo modi ab similique,
             </p>
-            <a href="#">Hire Me</a>
+            <a href="#contact">Hire Me</a>
         </div>
     </div>
     </section>
@@ -69,7 +74,7 @@
          </div>
         <div class="blocks">
             <div class="block1">
-                <div class="icon">
+                <div class="icon_block">
                    <img src="images/creation-de-sites-web.png" alt="">
                    <h3>Web Design</h3>
                 </div>
@@ -80,7 +85,7 @@
                 <a href="#">See Projects</a>
             </div>
             <div class="block2">
-                <div class="icon">
+                <div class="icon_block">
                    <img src="images/developper.png" alt="">
                    <h3>Web Development</h3>
                 </div>
@@ -91,7 +96,7 @@
                 <a href="#">See Projects</a>
             </div>
             <div class="block3">
-                <div class="icon">
+                <div class="icon_block">
                    <img src="images/designer.png" alt="">
                    <h3>UI/UX Design</h3>
                 </div>
@@ -110,40 +115,73 @@
         </div>
         <div id="global_skills">
         <div id="name_skills">
-            <p>Html</p>
-            <p>Css</p>
+            <p>Html/Css</p>
             <p>JavaScript</p>
+            <p>Web Design</p>
             <p>Photoshop</p>
             <p>Figma</p>
         </div>
         <div id="global_row">
         <div class="row_num">
-           90% <!-- <p class="first_row">80%</p> -->
+           95% <!-- <p class="first_row">80%</p> -->
         </div>
+        <div id="row">
+            <div class="row_95"></div>
+            <div class="row_5"></div>
+        </div>
+        <div class="row_num">
+            90% <!-- <p class="first_row">80%</p> -->
+         </div>
         <div id="row">
             <div class="row_90"></div>
             <div class="row_10"></div>
         </div>
+        <div class="row_num">
+            80% <!-- <p class="first_row">80%</p> -->
+         </div>
         <div id="row">
             <div class="row_80"></div>
             <div class="row_20"></div>
         </div>
+        <div class="row_num">
+            75% <!-- <p class="first_row">80%</p> -->
+         </div>
         <div id="row">
-            
-            <div class="row_80"></div>
-            <div class="row_20"></div>
+                <div class="row_75"></div>
+                <div class="row_25"></div>
         </div>
+        <div class="row_num">
+            80% <!-- <p class="first_row">80%</p> -->
+         </div>
         <div id="row">
-                <div class="row_70"></div>
-                <div class="row_30"></div>
-        </div>
-        <div id="row">
-            
             <div class="row_80"></div>
             <div class="row_20"></div>
         </div>
       </div>
     </div>
     </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact_content">
+           <div class="icon">
+               <div class="sous_icon"><img src="images/loca.png" alt=""><p>Riyad Eloulfa Casablanca Morocco</p></div>
+               <div class="sous_icon"><img src="images/newgmail.png" alt=""><p>Riyad Eloulfa Casablanca Morocco</p></div>
+               <div class="sous_icon"><img src="images/appel-telephonique.png" alt=""><p>+212 665292735</p></div>
+           </div>
+           <div class="input">
+              <p>Your Full Name<span>*</span></p>
+              <input type="text" id="fullname">
+              <p>Your Email Adress<span>*</span></p>
+              <input type="email" id="email"><br>
+              <p>Your Message<span>*</span></p>
+              <textarea id="message"></textarea><br>
+              <a href="#">Send Message</a>
+           </div>
+        </div>
+    </section>
+    <footer>
+        <p>COPYRIGHT 2023 <span>ELFA FATI</span>. ALL RIGHTS RESERVED</p>
+        <p>DEVELOPED BY <span>ELFA FATI</span></p>
+    </footer>
 </body>
 </html>

@@ -9,6 +9,7 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+    /* header */
 header{
     display: flex;
     padding-left: 40px;
@@ -94,7 +95,7 @@ span{
     text-decoration: none;
     font-size: 18px;
     color: black;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .menu li a:hover{
     color: rgb(221, 146, 177);
@@ -107,11 +108,12 @@ span{
     border-radius: 20px;
     font-size: 16px;
     color: black;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .menu .cv a:hover{
     background-color: rgb(221, 146, 177);
 }
+    /* home content */
 .home_content{
     padding-left: 130px;
     padding-top: 200px;
@@ -122,6 +124,17 @@ span{
     background-image: url(images/about1.png);
     background-size: cover;
     
+}
+.reseau_soc{
+    position: fixed;
+}
+.reseau_soc img{
+    margin-left: -120px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .paragraph .text1, .paragraph .text2, .paragraph .text3{
     font-weight: bold; 
@@ -139,9 +152,9 @@ span{
 }
 .home_content .text3{
     font-size: 35px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
-.home_content a{
+.home_content .btn_aboutme{
     text-decoration: none;
     padding: 10px 80px;
     border: 2px solid rgb(221, 146, 177);
@@ -160,6 +173,7 @@ span{
     width: 450px;
     margin-top: -120px;
 }
+    /* content about */
 .content_about{
     display: flex;
     gap: 150px;
@@ -200,6 +214,7 @@ span{
 .paragraph_about a:hover{
     background-color: rgb(221, 146, 177);
 }
+    /* services */
 #services{
     background-image: url(images/about.png);
     background-size: cover;
@@ -232,22 +247,23 @@ span{
 .blocks :hover{
     background-color: rgb(221, 146, 177);
 }
-.icon{
+.icon_block{
     display: flex;
     gap: 20px;
     justify-content: center;
     padding-bottom: 20px;
 }
-.icon h3{
+.icon_block h3{
     padding-top: 14px;
 }
-.icon img{
+.icon_block img{
     height: 60px;
     width: 60px;
 }
 .block1 p, .block2 p, .block3 p{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: justify;
+    font-size: 16px;
 }
 .block1 a, .block2 a, .block3 a{
     padding-left: 80px;
@@ -257,10 +273,19 @@ span{
 .block1 a:hover, .block2 a:hover, .block3 a:hover{
     color: white;
 }
+    /* skills */
+#skills{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(images/about.png);
+    background-size: cover;
+}
 .title_skills{
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+}
+.title_skills p{
+    margin-top: 20px;
 }
 #global_skills{
     display: flex;
@@ -269,7 +294,7 @@ span{
 }
 #name_skills p{
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
 }
 .row_num{
@@ -281,12 +306,60 @@ span{
     justify-content: center;
     margin-bottom: 40px;
 }
+.row_90{
+    height: 10px;
+    width: 530px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    background-color: rgb(229, 179, 200);
+}
+.row_10{
+    height: 10px;
+    width: 70px;
+    border-left: none;
+    margin-left: -15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(229, 229, 229);
+}
+.row_75{
+    height: 10px;
+    width: 430px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    background-color: rgb(107, 70, 85);
+}
+.row_25{
+    height: 10px;
+    width: 170px;
+    border-left: none;
+    margin-left: -15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(229, 229, 229);
+}
+.row_95{
+    height: 10px;
+    width: 570px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    background-color: rgb(52, 156, 149);
+}
+.row_5{
+    height: 10px;
+    width: 30px;
+    border-left: none;
+    margin-left: -15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(229, 229, 229);
+}
 .row_80{
     height: 10px;
     width: 500px;
     /* border: 1px solid; */
     border-radius: 20px;
-    background-color: rgb(221, 146, 177);
+    background-color: rgb(196, 35, 102);
 }
 .row_20{
     height: 10px;
@@ -297,35 +370,88 @@ span{
     border-bottom-right-radius: 10px;
     background-color: rgb(229, 229, 229);
 }
-.row_70{
-    height: 10px;
-    width: 400px;
-    /* border: 1px solid; */
-    border-radius: 20px;
-    background-color: rgb(107, 70, 85);
+/* Contact */
+#contact{
+    background-image: url(images/about.png);
+    background-size: cover;
+    padding-top: 60px;
 }
-.row_30{
-    height: 10px;
-    width: 200px;
-    border-left: none;
-    margin-left: -15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: rgb(229, 229, 229);
+#contact h1{
+    text-align: center;
 }
-.row_90{
-    height: 10px;
-    width: 550px;
-    /* border: 1px solid; */
-    border-radius: 20px;
-    background-color: rgb(52, 156, 149);
-}
-.row_10{
-    height: 10px;
+.icon img{
+    height: 50px;
     width: 50px;
-    border-left: none;
-    margin-left: -15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: rgb(229, 229, 229);
 }
+.contact_content{
+    display: flex;
+    padding: 40px;
+    gap: 100px;
+}
+.icon{
+    display: list-item;
+    list-style: none;
+    margin-left: 130px;
+}
+.sous_icon{
+    display: flex;
+    margin-bottom: 40px;
+}
+.sous_icon p{
+    margin-top: 15px;
+    color: gray;
+}
+.sous_icon img{
+    margin-right: 40px;
+}
+/* .icon p{
+    margin-bottom: 40px;
+
+} */
+.input p{
+    /* margin-left: 200px; */
+    text-align: center;
+    font-weight: bold;
+}
+input{
+    width: 500px;
+    height: 30px;
+    border: 1.5px solid;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+textarea{
+    width: 500px;
+    height: 150px;
+    border: 1.5px solid;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.input a{
+    float: right;
+    text-decoration: none;
+    padding: 10px 40px;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+.input a:hover{
+    background-color: rgb(221, 146, 177);
+}
+footer{
+    text-align: center;
+    height: 80px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+footer p{
+    margin-bottom: 20px;
+}
+/* @media screen and (min-width: 200px) {
+    #home, #about, #services, #skills, #contact{
+        width: 90%;
+    }
+} */
