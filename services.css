@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+    /* header */
+#header{
+    display: flex;
+    padding-left: 40px;
+    padding-right:  40px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+span{
+    color: #CD6B40;
+}
+.menu{
+    display: flex;
+    padding-top: 20px;
+    padding-right:20px ;
+}
+.menu li{
+    list-style: none;
+    margin-left: 20px;
+    
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.menu li a:hover{
+    color: #CD6B40;
+}
+.menu .cv a{
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: black;
+    background-color: #CD6B40;
+}
+.menu .cv a:hover{
+    background-color: #7d2a07;
+    color: white;
+}
+.reseau_soc{
+    position: fixed;
+    margin-top: 200px;
+    margin-left: 10px;
+}
+.reseau_soc img{
+    
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#web_design{
+    padding-top: 100px;
+    text-align: center;
+    background-color: #F5EBEB;
+    padding-bottom: 40px;
+}
+#web_design h2{
+    text-align: center;
+    color: #CD6B40;
+    
+}
+#web_design h4{
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.lara{
+    height: 250px;
+    width: 550px;
+}
+.sitefig{
+    height: 400px;
+    width: 550px;
+   
+}
+#web_development{
+    padding-top: 40px;
+    text-align: center;
+    background-color: #E4D0D0;
+    padding-bottom: 40px;
+}
+#web_development h4{
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+#ux_ui{
+    padding-top: 40px;
+    text-align: center;
+    background-color: #F5EBEB;
+    padding-bottom: 40px;
+}
+#ux_ui h4{
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.new_temp{
+    height: 400px;
+    width: 550px;
+}
+.figma_pro{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color:#CD6B40;
+}
+.figma_proj{
+    padding-top: 20px;
+    color:#CD6B40;
+}
+.landing{
+    height: 400px;
+    width: 550px;
+}
+.figm{
+    height: 150px;
+    width: 550px;
+}
+footer{
+    text-align: center;
+    height: 80px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+footer p{
+    margin-bottom: 20px;
+}
