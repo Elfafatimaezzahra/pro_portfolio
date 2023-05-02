@@ -152,7 +152,7 @@ footer{
 footer p{
     margin-bottom: 20px;
 }
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     *{
         margin: 0;
         padding: 0;
@@ -189,4 +189,14 @@ footer p{
         padding: 10px 15px;
         font-size: 16px;
         margin-left: 60px;
-    }} */
+    }
+    .lara{
+        height: 120px;
+        width: 300px;
+    }
+    .sitefig{
+        height: 200px;
+        width: 300px;
+       
+    }
+}
