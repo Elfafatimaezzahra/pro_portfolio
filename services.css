@@ -6,56 +6,65 @@
     box-sizing: border-box;
 }
     /* header */
-#header{
-    display: flex;
-    padding-left: 40px;
-    padding-right:  40px;
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    justify-content: space-between;
-}
-.logo{
-    padding: 10px;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-}
-span{
-    color: #CD6B40;
-}
-.menu{
-    display: flex;
-    padding-top: 20px;
-    padding-right:20px ;
-}
-.menu li{
-    list-style: none;
-    margin-left: 20px;
+   #header{
+        display: flex;
+        padding: 20px;
+        /* background-color: rgb(229, 227, 227); */
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        /* justify-content: space-between; */
+        
+    }
     
-}
-.menu li a{
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-}
-.menu li a:hover{
-    color: #CD6B40;
-}
-.menu .cv a{
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    color: black;
-    background-color: #CD6B40;
-}
-.menu .cv a:hover{
-    background-color: #7d2a07;
-    color: white;
-}
+    .logo{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        margin-top: -10px;
+    }
+    span{
+        color: #CD6B40;
+    }
+    .menu{
+        flex: 1;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .menu li{
+        list-style: none;
+        padding-left: 20px;
+        display: inline-block;
+    }
+    .menu li a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        
+    }
+    .menu li a:hover{
+        color: #CD6B40;
+    }
+    .cv a{
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        color: black;
+        background-color: #CD6B40;
+        
+    }
+    .cv a:hover{
+        background-color: #7d2a07;
+        color: white;
+    }
+    .icon-menu img{
+        height: 20px;
+        width: 25px;
+        display: none;
+        margin-left: 10px;
+    }
 .reseau_soc{
     position: fixed;
     margin-top: 200px;
@@ -143,3 +152,41 @@ footer{
 footer p{
     margin-bottom: 20px;
 }
+@media only screen and (max-width: 700px) {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Comic Neue', cursive;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+    }
+    .logo{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0px;
+        width: 400px;
+    }
+    .menu{
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 60px;
+        z-index: 2;
+        text-align: left;
+    }
+    .menu li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .icon-menu img{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cv a{
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 16px;
+        margin-left: 60px;
+    }}

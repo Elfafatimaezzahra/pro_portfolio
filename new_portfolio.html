@@ -15,26 +15,20 @@
     <section id="home">
         <header>
             <a href="#" class="logo"><span>E</span>lfa<span> F</span>ati</a>
+             
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li> 
-                <div class="cv"><a href="pro-cv.pdf" class="cv-btn">Download cv</a></div>
-                <!-- <div>
-                    <input type="checkbox" class="checkbox" id="checkbox">
-                  <label for="checkbox" class="label">
-                    <i class="fas fa-moon"></i>
-                    <i class='fas fa-sun'></i>
-                    <div class='ball'>
-                  </label>
-                </div> -->
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
               </ul>
+              <div class="cv"><a href="pro-cv.pdf" class="cv-btn">Download cv</a></div>
+              <div class="icon-menu"><img src="images/menu.png" onclick="togglemenu()"></div>
         </header>
         <div class="home_content">
             <div class="reseau_soc">
-                <a href="#"><img src="images/facebook.png" alt=""></a><br>
+                <a href="https://web.facebook.com/profile.php?id=100008517791350"><img src="images/facebook.png" alt=""></a><br>
                 <a href="#"><img src="images/whatsapp.png" alt=""></a><br>
                 <a href="https://github.com/Elfafatimaezzahra"><img src="images/github.png" alt=""></a>
             </div>
@@ -186,5 +180,19 @@
         <p>COPYRIGHT 2023 <span>ELFA FATI</span>. ALL RIGHTS RESERVED</p>
         <p>DEVELOPED BY <span>ELFA FATI</span></p>
     </footer>
+    <script>
+        var menu = document.getElementsByClassName("menu");
+menu.style.maxHeight = "0px";
+function togglemenu(){
+    if(menu.style.maxHeight == "0px")
+    {
+        menu.style.maxHeight = "130px";
+    }
+    else
+    {
+        menu.style.maxHeight = "0px";
+    }
+}
+    </script>
 </body>
 </html>
