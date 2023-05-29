@@ -23,7 +23,7 @@
             <li><a href="new_portfolio.html#contact" class="menu-btn">Contact</a></li> 
             
           </ul>
-          <div class="cv"><a href="mon_cv.pdf" class="cv-btn">Download cv</a></div>
+          <div class="cv"><a href="cv.pdf" class="cv-btn">Download cv</a></div>
           <div class="icon-menu"><img src="images/menu.png" onclick="togglemenu()"></div>
         </div>
         <div class="reseau_soc">
@@ -34,11 +34,85 @@
     <div id="web_design">
           <h2>Web Design</h2>
           <h4>Lara Erp Project</h4>
-          <img class="lara" src="images/psd.png" alt="">
+          <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="images/psd.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/l1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/l2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/l3.png" alt="">
+          </div>
+          <!--slide images end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
           <h4>Painting Campany Project</h4>
-          <img class="lara" src="images/painting.png" alt="">
-          <h4>Painting Campany Project</h4>
-          <img class="lara" src="images/about us.jpg" alt="">
+           <!--image slider start-->
+    <div class="slider2">
+        <div class="slides2">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radios1">
+          <input type="radio" name="radio-btn" id="radios2">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first2">
+            <img src="images/painting.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/about us.jpg" alt="">
+          </div>
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual2">
+          <label for="radios1" class="manual-btn"></label>
+          <label for="radios2" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radios' + counter).checked = true;
+          counter++;
+          if(counter > 2){
+            counter = 1;
+          }
+        }, 5000);
+        </script>
           <h4>Reproducing a Design</h4>
           <img class="sitefig" src="images/sitefig.png" alt="">
     </div>
@@ -49,7 +123,55 @@
         <h4>El Mellalia Cerame Project</h4>
         <img class="lara" src="images/elmellalia.png" alt="">
         <h4>Reproducing Docplanner Group Project</h4>
-        <img class="lara" src="images/docplanner.png" alt="">
+        <div class="slider5">
+            <div class="slides5">
+              <!--radio buttons start-->
+              <input type="radio" name="radio-btn" id="radi1">
+              <input type="radio" name="radio-btn" id="radi2">
+              <input type="radio" name="radio-btn" id="radi3">
+              <input type="radio" name="radio-btn" id="radi4">
+              <input type="radio" name="radio-btn" id="radi5">
+              <!--radio buttons end-->
+              <!--slide images start-->
+              <div class="slide first">
+                <img src="images/docplanner.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/doc.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/docp.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/docpl.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/docplan.png" alt="">
+              </div>
+              <!--slide images end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radi1" class="manual-btn"></label>
+              <label for="radi2" class="manual-btn"></label>
+              <label for="radi3" class="manual-btn"></label>
+              <label for="radi4" class="manual-btn"></label>
+              <label for="radi5" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+          </div>
+          <!--image slider end-->
+      
+          <script type="text/javascript">
+          var counter = 1;
+          setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 5){
+              counter = 1;
+            }
+          }, 5000);
+          </script>
         <h4>Shopping Cart Project</h4>
         <img class="lara" src="images/cart.png" alt="">
   </div>
@@ -74,27 +196,142 @@
     <img class="figm" src="images/figm.png" alt="">
 
     <h3 class="figma_pro">Canva Project</h3>
-    <img class="sitefig" src="images/canva.png" alt=""><br/>
-    <img class="sitefig" src="images/canva12.png" alt=""><br/>
-    <img class="sitefig" src="images/canva9.png" alt=""><br/>
-    <img class="sitefig" src="images/canva.png" alt=""><br/>
-    <img class="sitefig" src="images/canva10.png" alt=""><br/>
-    <img class="sitefig" src="images/canva7.png" alt=""><br/>
-    <img class="sitefig" src="images/canva8.png" alt=""><br/>
-    <img class="sitefig" src="images/canva21.png" alt="">
+    <div class="slider3">
+        <div class="slides3">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radioss1">
+          <input type="radio" name="radio-btn" id="radioss2">
+          <input type="radio" name="radio-btn" id="radioss3">
+          <input type="radio" name="radio-btn" id="radioss4">
+          <input type="radio" name="radio-btn" id="radioss5">
+          <input type="radio" name="radio-btn" id="radioss6">
+          <input type="radio" name="radio-btn" id="radioss7">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide3 first3">
+            <img src="images/canva.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva12.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva9.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva10.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva7.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva8.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva21.png" alt="">
+          </div>
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual3">
+          <label for="radioss1" class="manual-btn3"></label>
+          <label for="radioss2" class="manual-btn3"></label>
+          <label for="radioss3" class="manual-btn3"></label>
+          <label for="radioss4" class="manual-btn3"></label>
+          <label for="radioss5" class="manual-btn3"></label>
+          <label for="radioss6" class="manual-btn3"></label>
+          <label for="radioss7" class="manual-btn3"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radioss' + counter).checked = true;
+          counter++;
+          if(counter > 7){
+            counter = 1;
+          }
+        }, 5000);
+        </script>
 
     <h3 class="figma_pro">Book Bolt Project</h3>
-    <img class="sitefig" src="images/canva1.png" alt=""><br/>
-    <img class="sitefig" src="images/canva2.png" alt=""><br/>
-    <img class="sitefig" src="images/canva3.png" alt=""><br/>
-    <img class="sitefig" src="images/canva4.png" alt=""><br/>
-    <img class="sitefig" src="images/canva11.png" alt=""><br/>
-    <img class="sitefig" src="images/canva15.png" alt=""><br/>
-    <img class="sitefig" src="images/canva16.png" alt=""><br/>
-    <img class="sitefig" src="images/canva17.png" alt=""><br/>
-    <img class="sitefig" src="images/canva18.png" alt=""><br/>
-    <img class="sitefig" src="images/canva19.png" alt=""><br/>
-    <img class="sitefig" src="images/canva20.png" alt="">
+    <div class="slider3">
+        <div class="slides3">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radiosss1">
+          <input type="radio" name="radio-btn" id="radiosss2">
+          <input type="radio" name="radio-btn" id="radiosss3">
+          <input type="radio" name="radio-btn" id="radiosss4">
+          <input type="radio" name="radio-btn" id="radiosss5">
+          <input type="radio" name="radio-btn" id="radiosss6">
+          <input type="radio" name="radio-btn" id="radiosss7">
+          <input type="radio" name="radio-btn" id="radiosss8">
+          <input type="radio" name="radio-btn" id="radiosss9">
+          <input type="radio" name="radio-btn" id="radiosss10">
+          <input type="radio" name="radio-btn" id="radiosss11">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide3 first3">
+            <img src="images/canva1.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva2.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva3.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva4.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva11.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva15.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva16.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva17.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva18.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva19.png" alt="">
+          </div>
+          <div class="slide3">
+            <img src="images/canva20.png" alt="">
+          </div>
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual4">
+          <label for="radiosss1" class="manual-btn4"></label>
+          <label for="radiosss2" class="manual-btn4"></label>
+          <label for="radiosss3" class="manual-btn4"></label>
+          <label for="radiosss4" class="manual-btn4"></label>
+          <label for="radiosss5" class="manual-btn4"></label>
+          <label for="radiosss6" class="manual-btn4"></label>
+          <label for="radiosss7" class="manual-btn4"></label>
+          <label for="radiosss8" class="manual-btn4"></label>
+          <label for="radiosss9" class="manual-btn4"></label>
+          <label for="radiosss10" class="manual-btn4"></label>
+          <label for="radiosss11" class="manual-btn4"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radiosss' + counter).checked = true;
+          counter++;
+          if(counter > 11){
+            counter = 1;
+          }
+        }, 5000);
+        </script>
 </div>
 <footer>
     <p>COPYRIGHT 2023 <span>ELFA FATI</span>. ALL RIGHTS RESERVED</p>
