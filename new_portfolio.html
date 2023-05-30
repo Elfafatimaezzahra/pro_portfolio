@@ -165,22 +165,50 @@
                <div class="sous_icon"><img src="images/newgmail.png" alt=""><p>felfahimi@gmail.com</p></div>
                <div class="sous_icon"><img src="images/appel-telephonique.png" alt=""><p>+212 665292735</p></div>
            </div>
-           <div class="input">
+           <form class="input">
               <p>Your Full Name<span>*</span></p>
               <input type="text" id="fullname">
               <p>Your Email Adress<span>*</span></p>
               <input type="email" id="email"><br>
               <p>Your Message<span>*</span></p>
               <textarea id="message"></textarea><br>
-              <a href="#">Send Message</a>
-           </div>
+              <!-- <a href="#">Send Message</a> -->
+              <button type="submit" class="submit">Send</button>
+           </form>
         </div>
     </section>
     <footer>
         <p>COPYRIGHT 2023 <span>ELFA FATI</span>. ALL RIGHTS RESERVED</p>
         <p>DEVELOPED BY <span>ELFA FATI</span></p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+       //function to send the message when click on button send
+       const form = document.querySelector('.input');
+
+       function sendMsg(e){
+        e.preventDefault();
+       
+        const name = document.querySelector('#fullname'),
+              email = document.querySelector('#email'),
+              msg = document.querySelector('#message');
+       //function send email ...
+        Email.send({
+              SecureToken : "2b183937-241a-4f08-9b58-ad8b16c2a258",
+              To : 'felfahimi@gmail.com',
+              From : email.value,
+              Subject : "This is the subject",
+              Body : msg.value
+        }).then(
+              message => alert(message)
+        );
+       }
+
+       //add the event listener submit
+       form.addEventListener('submit',sendMsg);
+
+    </script>
+    <!-- <script>
         
         function togglemenu(){
             console.log("okkk")
@@ -193,6 +221,6 @@
                 document.getElementsByClassName("menu").style.display = "none";
             }
             }
-    </script>
+    </script> -->
 </body>
 </html>

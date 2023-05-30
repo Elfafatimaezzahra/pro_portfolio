@@ -366,27 +366,30 @@ input{
     border-radius: 20px;
     margin-bottom: 30px;
     background-color: #d9997e;
+    padding-left: 15px;
 }
 textarea{
     width: 500px;
     height: 150px;
     border: 1.5px solid #d9997e;
     border-radius: 20px;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 10px;
     background-color: #d9997e;
+    padding: 15px;
 }
-.input a{
-    float: right;
-    text-decoration: none;
+.submit{
+    margin-left: 32%;
     padding: 10px 40px;
     border-radius: 20px;
+    border: none;
     font-size: 16px;
     color: black;
     font-weight: bold;
     background-color: #d9997e;
+    width: 200px;
 }
-.input a:hover{
+.submit:hover{
     background-color: #6a2b10;
 }
 footer{
